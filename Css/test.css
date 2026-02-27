@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #333;
+}
+
+.project {
+    background-color: #f7f7f7;
+    padding: 20px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr  1fr 1fr;
+    gap: 10px;
+}
+
+.head-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    border-bottom: 2px solid #f80404;
+}
+
+.head-2{
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    border-bottom: 2px solid #f80404;
+}
+
+.nav {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    grid-column: 4 / span 1;
+    grid-row: 1 /span 3;
+    border-bottom: 2px solid #f80404;
+}
+.sect-1{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+    border-bottom: 2px solid #f80404;
+}
+
+.sect-2 {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid #f80404;
+}
+.sect-3{
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+    border-bottom: 2px solid #f80404;
+}
+
+.foot-1{
+    grid-column: 1 /span 1;
+    grid-row: 4 / span 1;
+    border-bottom: 2px solid #f80404;
+
+}
+
+.foot-2 {
+    grid-column: 2 /span 1;
+    grid-row: 4 / span 1;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-bottom: 2px solid #f00707;
+}
+
+.foot-3{
+    grid-column: 3 /span 1;
+    grid-row: 4 / span 1;
+     padding: 20px;
+    border-bottom: 2px solid #f00707;
+}
+.foot-4{
+    grid-column: 4 /span 1;
+    grid-row: 4 / span 1;
+     padding: 20px;
+    border-bottom: 2px solid #f00707;
+}
+
+.head-1, .head-2, .sect-1, .sect-3, .foot-1, .foot-3, .foot-4 {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+}
+
+.head::after, 
+/* .sect ::after,  */
+.foot::after,
+.nav::after {
+    content: '"';
+    display: block;
+    font-size: 80px;
+    line-height: 1;
+    opacity: 0.1;
+    text-align: right;
+    margin-top: -15px;
+    color: rgb(33, 32, 32); 
+}
